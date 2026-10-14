@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "email-doctor",
+  "version": "1.0.0",
+  "description": "Check cold emails for spam-filter triggers and reply-rate problems, see why each phrase is flagged and its source, and rewrite the email into a short, research-backed version.",
+  "author": {
+    "name": "Mike Penrod, VelocityLab.ai",
+    "email": "mike@velocitylab.ai",
+    "url": "https://velocitylab.ai"
+  },
+  "homepage": "https://velocitylab.ai/emaildoctor/",
+  "repository": "https://github.com/michaeljpenrod/email-doctor",
+  "license": "MIT",
+  "keywords": ["cold email", "deliverability", "spam filters", "sales outreach", "email copywriting"]
+}
