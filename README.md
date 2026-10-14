@@ -2,7 +2,7 @@
 
 Check a cold email for spam-filter triggers and reply-rate problems, see why each phrase is flagged and where that comes from, and rewrite it into a short, research-backed version.
 
-This is the same engine as the free web tool at **[velocitylab.ai/emaildoctor](https://velocitylab.ai/emaildoctor/)**, packaged for Claude and ChatGPT.
+This is the same engine as the free web tool at **[velocitylab.ai/emaildoctor](https://velocitylab.ai/emaildoctor/)**, packaged as a Claude skill and a ChatGPT plugin.
 
 ## What it does
 
@@ -23,7 +23,7 @@ Then paste any cold email and ask Claude to check or fix it.
 
 ## Use it in ChatGPT
 
-Create a Custom GPT with the files in [`chatgpt/`](chatgpt). Step-by-step setup is in [`chatgpt/README.md`](chatgpt/README.md).
+ChatGPT now runs custom workflows as plugins, and Custom GPTs retire on December 11, 2026. The quickest path is to create Email Doctor as a GPT from the files in [`chatgpt/`](chatgpt), then click **Migrate to plugin**. Step-by-step setup is in [`chatgpt/README.md`](chatgpt/README.md).
 
 ## Run the checker yourself
 
@@ -44,7 +44,7 @@ Start `email.txt` with a `Subject: ...` line, or pass `--subject` and `--body`. 
 | `claude/email-doctor/references/catalog.json` | 405 phrases with severity, reason, source URL, and suggested fixes |
 | `claude/email-doctor/references/rewrite-rules.md` | The rules "Fix it!" uses on the website |
 | `claude/email-doctor/references/research.md` | What filters weigh, scoring, reply-rate evidence, and the pre-send checklist |
-| `chatgpt/` | Custom GPT instructions and knowledge files |
+| `chatgpt/` | ChatGPT setup: instructions and knowledge files for a GPT that migrates to a plugin |
 
 ## Feedback
 
